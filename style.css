@@ -33,13 +33,14 @@ body {
 .header {
   display: grid;
   height: 53px;
-  grid-template-columns: minmax(150px, 1fr) auto;
+  grid-template-columns: minmax(100px, 1fr);
+  grid-auto-flow: column;
   padding: 8px 10px;
 }
 
 .header-title {
   display: grid;
-  grid-template-columns: 30px 1fr;
+  grid-template-columns: 30px minmax(50px, 1fr);
   grid-template-rows: 50% 50%;
   align-items: center;
   column-gap: 10px;
