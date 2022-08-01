@@ -91,3 +91,23 @@ body {
   display: grid;
   grid-template-rows: auto 1fr 33px;
 }
+
+.main-settings-bar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: column;
+}
+
+.main-settings-bar-tabs {
+  display: grid;
+  grid-auto-flow: column;
+  list-style-type: none;
+  justify-items: start;
+  grid-auto-columns: minmax(0, min-content);
+}
+
+.main-settings-bar-settings {
+  display: grid;
+  grid-auto-flow: column;
+  list-style-type: none;
+}
