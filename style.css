@@ -53,6 +53,9 @@ h1 {
 
 .header-navbar-list {
   display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
   grid-template-columns: repeat(4, auto);
   gap: 12px;
   list-style-type: none;
