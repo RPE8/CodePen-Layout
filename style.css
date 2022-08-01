@@ -2,6 +2,7 @@
   --main-gray: #1d1e22;
   --gray: hsl(227.3684210526deg 12.2580645161% 30.3921568627%);
   --lighter-gray: hsl(227.3684210526deg 12.2580645161% 50.3921568627%);
+  --darker-gray: hsl(227.3684210526deg 12.2580645161% 20.3921568627%);
   --background-color: var(--main-gray);
   --button-background-color: var(--gray);
   --navbar-background-color: var(--main-gray);
@@ -40,7 +41,7 @@ body {
 
 .header-title {
   display: grid;
-  grid-template-columns: 30px minmax(50px, 1fr);
+  grid-template-columns: 30px auto;
   grid-template-rows: 50% 50%;
   align-items: center;
   column-gap: 10px;
@@ -117,27 +118,45 @@ body {
   list-style-type: none;
   justify-items: start;
   grid-auto-columns: min-content;
+  gap: 2px;
 }
 
 .main-settings-bar-settings {
   display: grid;
   grid-auto-flow: column;
   list-style-type: none;
+  justify-items: center;
+  align-items: center;
 }
 
-.main-menu li {
-  margin-right: 3px;
+.main-settings-bar-settings li {
+  margin-right: 5px;
+}
+
+.main-settings-bar-settings .main-settings-button {
+  border-radius: 2px;
+  padding: 5px 10px;
+}
+
+.main-settings-bar-tabs li:nth-child(1) {
+  margin-left: 5px;
 }
 
 .main-settings-button {
-  height: 40px;
-  border-radius: 4px;
   border: 0;
   color: var(--button-color);
   font-size: 15px;
   background-color: var(--button-background-color);
-  padding: 5px 20px;
+  padding: 10px 20px;
   width: 100%;
+}
+
+.editor-selection {
+  background-color: var(--darker-gray);
+}
+
+.editor-selection.selected {
+  background-color: var(--gray);
 }
 
 .main-code-editor-wrapper-textarea {
@@ -158,6 +177,7 @@ body {
 }
 
 .main-result-iframe {
+  background-color: white;
   height: 100%;
   width: 100%;
 }
