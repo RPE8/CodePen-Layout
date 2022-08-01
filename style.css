@@ -1,9 +1,10 @@
 :root {
-  --button-background-color: hsl(
-    227.3684210526deg 12.2580645161% 30.3921568627%
-  );
+  --gray: hsl(227.3684210526deg 12.2580645161% 30.3921568627%);
+  --button-background-color: var(--gray);
   --button-color: aliceblue;
   --header-author-color: gray;
+  --sign-up-button-background-color: lightgreen;
+  --sign-up-button-color: var(--gray);
 }
 
 * {
@@ -82,8 +83,8 @@ body {
 }
 
 .sign-up {
-  background-color: lightgreen;
-  color: black;
+  background-color: var(--sign-up-button-background-color);
+  color: var(--sign-up-button-color);
 }
 
 .main {
