@@ -126,3 +126,18 @@ body {
   padding: 5px 20px;
   width: 100%;
 }
+
+.main-code-editor-wrapper-textarea {
+  height: 100%;
+  width: 100%;
+}
+
+.main-code-editor textarea {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.main-code-editor textarea.open {
+  display: block;
+}
