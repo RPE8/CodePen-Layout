@@ -89,7 +89,7 @@ body {
 
 .main {
   display: grid;
-  grid-template-rows: auto 1fr 33px;
+  grid-template-rows: auto 1fr 1fr;
 }
 
 .main-settings-bar {
