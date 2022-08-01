@@ -94,7 +94,7 @@ body {
 
 .main {
   display: grid;
-  grid-template-rows: auto 1fr 1fr;
+  grid-template-rows: auto 1fr 1.5fr;
 }
 
 .main-settings-bar {
