@@ -170,6 +170,14 @@ body {
   width: 100%;
 }
 
+.main-code-editor.large-width-section {
+  grid-template-columns: repeat(3, 33.3%);
+}
+
+.main-code-editor.large-width-section > div {
+  margin: 0px 10px;
+}
+
 .main-code-editor textarea {
   height: 100%;
   width: 100%;
