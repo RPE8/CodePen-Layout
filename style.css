@@ -1,8 +1,8 @@
 :root {
-  --main-gray: #1d1e22;
+  --main-gray: #0b0b0d;
   --gray: hsl(227.3684210526deg 12.2580645161% 30.3921568627%);
   --lighter-gray: hsl(227.3684210526deg 12.2580645161% 50.3921568627%);
-  --darker-gray: hsl(227.3684210526deg 12.2580645161% 20.3921568627%);
+  --darker-gray: rgb(30, 31, 36);
   --background-color: var(--main-gray);
   --button-background-color: var(--gray);
   --navbar-background-color: var(--main-gray);
@@ -10,7 +10,7 @@
   --header-author-color: var(--lighter-gray);
   --sign-up-button-background-color: lightgreen;
   --sign-up-button-color: var(--gray);
-  --editor-background-color: var(--main-gray);
+  --editor-background-color: var(--darker-gray);
   --editor-color: var(--lighter-gray);
 }
 
