@@ -112,6 +112,21 @@ body {
   display: none;
 }
 
+.large-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.large-section-header button {
+  border: 0;
+  color: var(--button-color);
+  font-size: 10px;
+  background-color: var(--button-background-color);
+  border-radius: 2px;
+  padding: 2px 10px;
+}
+
 .main-settings-bar {
   display: grid;
   grid-template-columns: 1fr;
@@ -184,6 +199,12 @@ body {
   background-color: var(--editor-background-color);
   color: var(--editor-color);
   display: none;
+  border: 0;
+}
+
+.large-wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 .main-code-editor textarea.open {
@@ -231,9 +252,14 @@ body {
 
   .large-width-section {
     display: grid;
+    margin-bottom: 10px;
   }
 
   .main {
     grid-template-rows: 1fr 1.5fr;
+  }
+
+  .large-width-section.main-code-editor textarea {
+    display: block;
   }
 }
