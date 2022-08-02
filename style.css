@@ -181,3 +181,31 @@ body {
   height: 100%;
   width: 100%;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex: 1;
+}
+
+.footer-menu:nth-of-type(2) {
+  gap: 10px;
+  margin: 0px;
+  flex: 0;
+}
+
+.footer-menu-item button {
+  border: 0;
+  color: var(--button-color);
+  font-size: 15px;
+  background-color: var(--button-background-color);
+  border-radius: 2px;
+  padding: 5px 10px;
+}
