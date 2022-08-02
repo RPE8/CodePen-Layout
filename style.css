@@ -118,6 +118,17 @@ body {
   align-items: center;
 }
 
+.large-section-header span {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: 80px;
+  border-top: 2px solid var(--gray);
+  background-color: var(--darker-gray);
+}
+
 .large-section-header button {
   border: 0;
   color: var(--button-color);
@@ -200,11 +211,12 @@ body {
   color: var(--editor-color);
   display: none;
   border: 0;
+  resize: none;
 }
 
 .large-wrapper {
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: 30px 1fr;
 }
 
 .main-code-editor textarea.open {
@@ -257,6 +269,7 @@ body {
 
   .main {
     grid-template-rows: 1fr 1.5fr;
+    margin-top: 0px;
   }
 
   .large-width-section.main-code-editor textarea {
