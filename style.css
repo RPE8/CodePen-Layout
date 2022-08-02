@@ -37,6 +37,7 @@ body {
   grid-template-columns: minmax(100px, 1fr);
   grid-auto-flow: column;
   padding: 8px 10px;
+  border-bottom: 1px solid var(--darker-gray);
 }
 
 .header-title {
@@ -103,7 +104,12 @@ body {
 
 .main {
   display: grid;
+  margin-top: 5px;
   grid-template-rows: auto 1fr 1.5fr;
+}
+
+.large-width-section {
+  display: none;
 }
 
 .main-settings-bar {
@@ -208,4 +214,18 @@ body {
   background-color: var(--button-background-color);
   border-radius: 2px;
   padding: 3px 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .small-width-section {
+    display: none;
+  }
+
+  .large-width-section {
+    display: grid;
+  }
+
+  .main {
+    grid-template-rows: 1fr 1.5fr;
+  }
 }
